@@ -4,3 +4,13 @@ protected/runtime/*
 !protected/runtime/.gitignore
 protected/data/*.db
 themes/classic/views/
+/100uslug/.vs
+/100uslug/100uslug/bin/Debug
+/100uslug/100uslug/obj
+/Client/LocalBD/bin/Debug
+/Client/LocalBD/obj/Debug
+/Client/StoUslugClient/.vs/StoUslugClient/v16
+/Client/StoUslugClient/bin/Debug
+/Client/StoUslugClient/obj/Debug
+/Client/StoUslugClient/packages
+/Client/StoUslugClient/Properties
