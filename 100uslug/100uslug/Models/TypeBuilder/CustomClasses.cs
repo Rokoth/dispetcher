@@ -21,7 +21,7 @@ namespace _100uslug.Models
                 CustomTypes.Add(table.Name, DynamicTypeBuilder.CreateNewType(table.Name, table.Columns.Select(s => new Field()
                 {
                     FieldName = s.Name,
-                    FieldType = s.Type
+                    FieldType = Type.GetType(s.Type)
                 }).ToList()));
             }
         }

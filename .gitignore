@@ -14,3 +14,6 @@ themes/classic/views/
 /Client/StoUslugClient/obj/Debug
 /Client/StoUslugClient/packages
 /Client/StoUslugClient/Properties
+/100uslug/StoUslug.Common/obj
+/100uslug/StoUslug.Db/obj
+/100uslug/StoUslug.Deployer/obj
