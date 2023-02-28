@@ -17,3 +17,5 @@ themes/classic/views/
 /100uslug/StoUslug.Common/obj
 /100uslug/StoUslug.Db/obj
 /100uslug/StoUslug.Deployer/obj
+/100uslug/DbClient/obj
+/100uslug/StoUslugClient/obj
