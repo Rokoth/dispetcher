@@ -1,6 +1,6 @@
 using System;
 
-namespace _100uslug.Models
+namespace StoUslug.Contract.Models
 {
     public class ErrorViewModel
     {

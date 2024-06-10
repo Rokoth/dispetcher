@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace _100uslug.Models.Base
+namespace StoUslug.Db.Model
 {
-    public class Table
-    {
-        public Guid Id { get; set; }
+    public class Table: Entity
+    {       
         public string Name { get; set; }
         public string ModelName { get; set; }
         public virtual ICollection<Column> Columns { get; set; }
@@ -15,9 +14,8 @@ namespace _100uslug.Models.Base
         public virtual ICollection<TableIndex> Indexes { get; set; }
     }
 
-    public class Column
-    {
-        public Guid Id { get; set; }
+    public class Column : Entity
+    {        
         public Guid TableId { get; set; }
         public string Name { get; set; }
         public string ModelName { get; set; }
@@ -28,9 +26,8 @@ namespace _100uslug.Models.Base
         public string DefaultValue { get; set; }
     }
 
-    public class ForeignKey
-    {
-        public Guid Id { get; set; }
+    public class ForeignKey : Entity
+    {       
         public Guid TableId { get; set; }
         public string Name { get; set; }
         public string ForeignTable { get; set; }
@@ -38,9 +35,8 @@ namespace _100uslug.Models.Base
         public string KeyField { get; set; }
     }
 
-    public class TableIndex
-    {
-        public Guid Id { get; set; }
+    public class TableIndex : Entity
+    {       
         public Guid TableId { get; set; }
         public string Name { get; set; }
         public string Field { get; set; }

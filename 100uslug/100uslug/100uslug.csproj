@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Version>0.0.1</Version>
     <Title>StoUslug CRM</Title>
     <PackageId>StoUslug.CRM</PackageId>
@@ -51,6 +51,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StoUslug.Common\StoUslug.Common.csproj" />
+    <ProjectReference Include="..\StoUslug.Contract\StoUslug.Contract.csproj" />
     <ProjectReference Include="..\StoUslug.Db\StoUslug.Db.csproj" />
     <ProjectReference Include="..\StoUslug.Deployer\StoUslug.Deployer.csproj" />
   </ItemGroup>

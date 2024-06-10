@@ -21,6 +21,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Collections.Generic;
 using StoUslug.DeployerService;
+using StoUslug.Contract.Models;
 
 namespace _100uslug
 {
@@ -137,12 +138,12 @@ namespace _100uslug
             {
                 opt.EnableEndpointRouting = false;
             });
-            services.AddDbContext<BaseContext>((sp, opt) =>
+            services.AddDbContext<DbPgContext>((sp, opt) =>
             {
                 opt.UseInternalServiceProvider(sp);
             });
 
-            foreach (var type in typeof(Company).Assembly.GetTypes())
+            foreach (var type in typeof(Entity).Assembly.GetTypes())
             {
                 if (typeof(Entity).IsAssignableFrom(type))
                 {
@@ -179,7 +180,7 @@ namespace _100uslug
                     .Where(s => !string.IsNullOrEmpty(s)).ToArray();
                 if (segments.Length > 0 && segments[0].Equals("Simple", StringComparison.InvariantCultureIgnoreCase))
                 {
-                    var model = Array.Find(typeof(Company).Assembly.GetTypes(), s => s.Name.Equals(segments[1],
+                    var model = Array.Find(typeof(Entity).Assembly.GetTypes(), s => s.Name.Equals(segments[1],
                             StringComparison.InvariantCultureIgnoreCase));
                     var type = typeof(CustomControllerService<>).MakeGenericType(model);
                     var service = context.RequestServices.GetService(type);

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using _100uslug.Models;
 using _100uslug.Common;
+using StoUslug.Contract.Models;
 
 namespace _100uslug.Controllers
 {
