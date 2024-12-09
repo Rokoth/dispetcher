@@ -71,6 +71,7 @@ namespace StoUslugClient
 
 
             services.AddSingleton<MainWindow>();
+            services.AddSingleton<SettingsWindow>();
             //services.AddScoped<FormulaWindow>();
             //services.AddScoped<AboutWindow>();
             //services.AddScoped<ProjectAddEditWindow>();

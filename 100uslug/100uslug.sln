@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoUslug.Services", "StoUsl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoUslug.Contract", "StoUslug.Contract\StoUslug.Contract.csproj", "{91D1D81D-3C70-41D3-A55F-FDD931B1C6C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoUslugClient.ClientHttpClient", "StoUslugClient.HttpClient\StoUslugClient.ClientHttpClient.csproj", "{9A97EE2A-C17F-4891-8D7C-86448A1080C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoUslugClient.ClientHttpClient", "StoUslugClient.HttpClient\StoUslugClient.ClientHttpClient.csproj", "{9A97EE2A-C17F-4891-8D7C-86448A1080C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoUslug.Client.Services", "StoUslug.Client.Services\StoUslug.Client.Services.csproj", "{88E7EE79-D676-47C0-A7A5-DBAB68344DA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{9A97EE2A-C17F-4891-8D7C-86448A1080C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A97EE2A-C17F-4891-8D7C-86448A1080C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A97EE2A-C17F-4891-8D7C-86448A1080C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E7EE79-D676-47C0-A7A5-DBAB68344DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E7EE79-D676-47C0-A7A5-DBAB68344DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E7EE79-D676-47C0-A7A5-DBAB68344DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E7EE79-D676-47C0-A7A5-DBAB68344DA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
